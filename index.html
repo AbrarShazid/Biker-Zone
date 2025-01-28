@@ -41,6 +41,9 @@
               primaryy: "#E76F51",
               slider: "rgba(231, 111, 81, 0.10)",
             },
+            boxShadow: {
+                    custom: '0px 0px 4px 0px rgba(0, 0, 0, 0.15)',
+                 },
           },
         },
       };
@@ -52,8 +55,6 @@
   <body class="poppins">
     <header class="md:mx-[7%] md:my-5 text-[#000]">
       <nav>
-
-
         <div class="navbar">
           <div class="flex-1">
             <div class="dropdown">
@@ -63,17 +64,20 @@
                   class="h-5 w-5"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor">
+                  stroke="currentColor"
+                >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16" />
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
                 </svg>
               </div>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
                 <!-- for mobile view  -->
                 <li><a>Home</a></li>
                 <li><a>Shop</a></li>
@@ -88,114 +92,239 @@
               <li><a>Home</a></li>
               <li><a>Shop</a></li>
               <li><a>News</a></li>
-           
+
               <li><a>Contact</a></li>
             </ul>
           </div>
           <div class="">
-            <a class="btn hover:text-[#E76F51] hover:bg-white bg-primaryy text-white md:py-4 md:px-10">Button</a>
+            <a
+              class="btn hover:text-[#E76F51] hover:bg-white bg-primaryy text-white md:py-4 md:px-10"
+              >Button</a
+            >
           </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
       </nav>
-
     </header>
 
-    <main class="mx-[7%] text-[#000] mb-20">
+    <main class="mx-[7%] text-[#000]">
       <!-- slider section  -->
-      <section class="bg-slider rounded-md">
-        <div class="carousel w-full ">
-          <div id="slide1" class="carousel-item relative w-full ">
-            <div class="mx-[8%]  my-[6%] md:flex justify-between  gap-10 items-center px-[4%]">
+      <section class="bg-slider rounded-md mb-20">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <div
+              class="mx-[8%] my-[6%] md:flex justify-between gap-10 items-center px-[4%]"
+            >
               <!-- content box  -->
               <div class="space-y-5 text-center md:text-left flex-1">
-                <h1 class="text-2xl md:text-5xl md:leading-[60px] font-bold">Ride-on R15 V4 <br> with Smile</h1>
-                <p class="text-[#000000CC]">Amet minim mollit non deserunt ullamco 
-                  est sit aliqua dolor do amet sint. Velit officia consequat  duis enim velit mollit.</p>
-                <button class="bg-primaryy font-semibold text-white px-4 py-2 md:px-6 md:py-3 rounded-md">Purchase</button>
+                <h1 class="text-2xl md:text-5xl md:leading-[60px] font-bold">
+                  Ride-on R15 V4 <br />
+                  with Smile
+                </h1>
+                <p class="text-[#000000CC]">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+                <button
+                  class="bg-primaryy font-semibold text-white px-4 py-2 md:px-6 md:py-3 rounded-md"
+                >
+                  Purchase
+                </button>
               </div>
               <!-- image box  -->
               <div class="flex-1">
-                <img
-                src="images/slider/bike1.png"
-                class="w-full" />
+                <img src="images/slider/bike1.png" class="w-full" />
               </div>
             </div>
-            
-            <div class="absolute left-3 right-3 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide3" class="btn btn-circle bg-primaryy hover:bg-primaryy hover:text-white">❮</a>
-              <a href="#slide2" class="btn btn-circle bg-primaryy hover:bg-primaryy hover:text-white">❯</a>
+
+            <div
+              class="absolute left-3 right-3 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-primaryy hover:bg-primaryy hover:text-white"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-primaryy hover:bg-primaryy hover:text-white"
+                >❯</a
+              >
             </div>
           </div>
           <!-- slide 2 -->
-          <div id="slide2" class="carousel-item relative w-full ">
-
-            <div class="mx-[8%]  my-[6%] md:flex justify-between  gap-10 items-center px-[4%]">
+          <div id="slide2" class="carousel-item relative w-full">
+            <div
+              class="mx-[8%] my-[6%] md:flex justify-between gap-10 items-center px-[4%]"
+            >
               <!-- content box  -->
               <div class="space-y-5 text-center md:text-left flex-1">
-                <h1 class="text-2xl md:text-5xl md:leading-[60px] font-bold">Ride-on R13 V4 <br> with Smile</h1>
-                <p class="text-[#000000CC]">Amet minim mollit non deserunt ullamco 
-                  est sit aliqua dolor do amet sint. Velit officia consequat  duis enim velit mollit.</p>
-                <button class="bg-primaryy font-semibold text-white px-4 py-2 md:px-6 md:py-3 rounded-md">Purchase</button>
+                <h1 class="text-2xl md:text-5xl md:leading-[60px] font-bold">
+                  Ride-on R13 V4 <br />
+                  with Smile
+                </h1>
+                <p class="text-[#000000CC]">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+                <button
+                  class="bg-primaryy font-semibold text-white px-4 py-2 md:px-6 md:py-3 rounded-md"
+                >
+                  Purchase
+                </button>
               </div>
 
               <!-- image box  -->
               <div class="flex-1">
-                <img
-                src="images/slider/bike2.png"
-                class="w-full" />
+                <img src="images/slider/bike2.png" class="w-full" />
               </div>
             </div>
-            
-            <div class="absolute left-3 right-3 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide1" class="btn btn-circle bg-primaryy hover:bg-primaryy hover:text-white">❮</a>
-              <a href="#slide3" class="btn btn-circle bg-primaryy hover:bg-primaryy hover:text-white">❯</a>
+
+            <div
+              class="absolute left-3 right-3 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-primaryy hover:bg-primaryy hover:text-white"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-primaryy hover:bg-primaryy hover:text-white"
+                >❯</a
+              >
             </div>
           </div>
           <!-- slide 3 -->
-          <div id="slide3" class="carousel-item relative w-full ">
-
-            <div class="mx-[8%]  my-[6%] md:flex justify-between  gap-10 items-center px-[4%]">
+          <div id="slide3" class="carousel-item relative w-full">
+            <div
+              class="mx-[8%] my-[6%] md:flex justify-between gap-10 items-center px-[4%]"
+            >
               <!-- content box  -->
               <div class="space-y-5 text-center md:text-left flex-1">
-                <h1 class="text-2xl md:text-5xl md:leading-[60px] font-bold">Ride-on R15 V4 <br> with Smile</h1>
-                <p class="text-[#000000CC]">Amet minim mollit non deserunt ullamco 
-                  est sit aliqua dolor do amet sint. Velit officia consequat  duis enim velit mollit.</p>
-                <button class="bg-primaryy font-semibold text-white px-4 py-2 md:px-6 md:py-3 rounded-md">Purchase</button>
+                <h1 class="text-2xl md:text-5xl md:leading-[60px] font-bold">
+                  Ride-on R15 V4 <br />
+                  with Smile
+                </h1>
+                <p class="text-[#000000CC]">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+                <button
+                  class="bg-primaryy font-semibold text-white px-4 py-2 md:px-6 md:py-3 rounded-md"
+                >
+                  Purchase
+                </button>
               </div>
 
               <!-- image box  -->
               <div class="flex-1">
-                <img
-                src="images/slider/bike3.png"
-                class="w-full" />
+                <img src="images/slider/bike3.png" class="w-full" />
               </div>
             </div>
-            
-            <div class="absolute left-3 right-3 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide2" class="btn btn-circle bg-primaryy hover:bg-primaryy hover:text-white">❮</a>
-              <a href="#slide1" class="btn btn-circle bg-primaryy hover:bg-primaryy hover:text-white">❯</a>
+
+            <div
+              class="absolute left-3 right-3 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-primaryy hover:bg-primaryy hover:text-white"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-primaryy hover:bg-primaryy hover:text-white"
+                >❯</a
+              >
             </div>
           </div>
         </div>
-<!-- used carousel from daisyui  -->
+        <!-- used carousel from daisyui  -->
       </section>
       <!-- feature bike  -->
 
+      <section class="">
+        <div class="space-y-2 text-center">
+          <h2 class="text-2xl md:text-5xl font-semibold">
+            Fetured Bikes In This Year
+          </h2>
+          <p class="text-primaryy font-semibold ">
+            Best bike collection
+            <hr class="border border-primaryy max-w-[6%] mx-auto">
+          </p>
+        </div>
+
+        <div class="mt-10  grid md:grid-cols-2 lg:grid-cols-3 justify-self-center gap-16">
+          <div><img src="images/others/feature-bike.png" alt=""></div>
+          <div><img src="images/others/feature-bike.png" alt=""></div>
+          <div><img src="images/others/feature-bike.png" alt=""></div>
+        </div>
+      </section>
+
+      <!-- news section  -->
+
+
+      <section class="my-20">
+        <div class="text-center">
+          <h2 class="text-2xl md:text-5xl font-semibold">latest News</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+
+          <div class="card bg-[#fff] rounded-md shadow-custom p-4 space-y-6">
+            <figure>
+              <img
+                src="images/others/latest1.png"
+                alt="Bike1" />
+            </figure>
+            <div class="card-body space-y-3 p-0 flex flex-col items-center md:items-start text-center md:text-left">
+              <h2 class="card-title ">Ducati XDIAVEL S-73</h2>
+              <p class="text-[#6C6C6C] ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+              <div class="card-actions">
+                <button class="btn text-primaryy border-primaryy bg-white hover:bg-primaryy hover:text-white">Read More</button>
+              </div>
+            </div>
+          </div>
+          <!-- second card  -->
+          <div class="card bg-[#fff] rounded-md shadow-custom p-4 space-y-6">
+            <figure>
+              <img
+                src="images/others/latest2.png"
+                alt="Bike1" />
+            </figure>
+            <div class="card-body space-y-3 p-0 flex flex-col items-center md:items-start text-center md:text-left">
+              <h2 class="card-title">Motorcycles & Scooters</h2>
+              <p class="text-[#6C6C6C] ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+              <div class="card-actions">
+                <button class="btn text-primaryy border-primaryy bg-white hover:bg-primaryy hover:text-white">Read More</button>
+              </div>
+            </div>
+          </div>
+          <!-- third card  -->
+          <div class="card bg-[#fff] rounded-md shadow-custom p-4 space-y-6">
+            <figure>
+              <img
+                src="images/others/latest3.png"
+                alt="Bike1" />
+            </figure>
+            <div class="card-body space-y-3 p-0 flex flex-col items-center md:items-start text-center md:text-left">
+              <h2 class="card-title">2021 Honda CBR500R</h2>
+              <p class="text-[#6C6C6C] ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+              <div class="card-actions">
+                <button class="btn text-primaryy border-primaryy bg-white hover:bg-primaryy hover:text-white">Read More</button>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </section>
+
+      <!-- client review section  -->
+       
+
     </main>
 
-    <footer>
-
-    </footer>
+    <footer></footer>
   </body>
 </html>
